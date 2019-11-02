@@ -67,15 +67,16 @@
 
 
 	<!-- Custom Header -->
-	<header class="header grid-y">
-		<div class="header-image small-12 medium-12 large-12"></div>
-		<nav class="navbar small-0 medium-0 large-0">
-			<ul class="navbar-list">
-				<li class="active-tab navbar-tab">
-					<div class="navbar-tab-content">Home</div>
-				</li>
-				<li class="navbar-tab">Menu</li>
-				<li class="navbar-tab">Contact</li>
-			</ul>
-		</nav>
+	<header class="header">
+		<div class="header-image">
+			<nav class="navbar" id="navbar">
+				<ul class="navbar-list" id="navbar-menu">
+					<li class="active-tab navbar-tab">
+						<div class="navbar-tab-content">Home</div>
+					</li>
+					<li class="navbar-tab">Menu</li>
+					<li class="navbar-tab">Contact</li>
+				</ul>
+			</nav>
+		</div>
 	</header>
