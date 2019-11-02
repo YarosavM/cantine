@@ -85,15 +85,15 @@ main, .main {
 footer, .footer {
   height: auto;
   background: white; }
-  footer .footer-p1, footer .footer-p2, .footer .footer-p1, .footer .footer-p2 {
-    color: white; }
-  footer .footer-p1, .footer .footer-p1 {
-    background: rgba(0, 0, 0, 0.7); }
-  footer .footer-p2, .footer .footer-p2 {
-    background: rgba(0, 0, 0, 0.8); }
-  footer .footer-content, .footer .footer-content {
-    text-align: center;
-    padding: 10px; }
+footer .footer-p1, footer .footer-p2, .footer .footer-p1, .footer .footer-p2 {
+  color: white; }
+footer .footer-p1, .footer .footer-p1 {
+  background: rgba(0, 0, 0, 0.7); }
+footer .footer-p2, .footer .footer-p2 {
+  background: rgba(0, 0, 0, 0.8); }
+footer .footer-content, .footer .footer-content {
+  text-align: center;
+  padding: 10px; }
 
 .footer-menu {
   padding: 5px; }
