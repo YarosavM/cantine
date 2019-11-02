@@ -1,5 +1,5 @@
+"use strict";
 //jQuery(document).foundation()
-
 jQuery.noConflict();
 
 window.onscroll = function() {myFunction()};
