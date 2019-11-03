@@ -49,17 +49,13 @@ function ale_enqueue_styles() {
 	wp_register_style( 'aletheme_foundation_css', THEME_URL . '/css/foundation.css', array(), ALETHEME_THEME_VERSION, 'all' );
 	wp_register_style( 'aletheme_foundation_min_css', THEME_URL . '/css/foundation.min.css', array(), ALETHEME_THEME_VERSION, 'all' );
 	wp_register_style( 'aletheme_style_css', THEME_URL . '/css/style.css', array(), ALETHEME_THEME_VERSION, 'all' );
-	wp_register_style( 'aletheme_women_style_css', THEME_URL . '/css/women.style.css', array(), ALETHEME_THEME_VERSION, 'all' );
 
-	wp_register_style( 'aletheme_woocommerce_css', THEME_URL . '/css/woocommerce.css', array(), ALETHEME_THEME_VERSION, 'all' );
 
 
     wp_enqueue_style('aletheme_foundation_css');
     wp_enqueue_style('aletheme_foundation_min_css');
     wp_enqueue_style('aletheme_style_css');
-    wp_enqueue_style('aletheme_women_style_css');
     
-    wp_enqueue_style('aletheme_woocommerce_css');
     /*** --- ***/
 
     if(is_page_template('template-about.php') or is_page_template('template-award.php')){

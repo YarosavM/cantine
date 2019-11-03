@@ -26,8 +26,14 @@ ul{
 }
 
 .sticky{
-	position: fixed;
-	top: 0;
+	z-index: 69;
+	position: fixed!important;
+	top: 0!important;
+	background: black!important;
+	color: white!important;
+	min-height: 50px!important;
+	width: 100%!important;
+	transition: 0.3s;
 }
 
 header, .header{
@@ -43,9 +49,10 @@ header, .header{
 	color: white;
 }
 nav, .navbar{
+	z-index: 69;
+	transition: 0.3s;
 	height: 50px;
 	position: relative;
-	bottom: 0;
 	color:white;
 }
 .navbar-list{

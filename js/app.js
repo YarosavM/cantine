@@ -1,19 +1,21 @@
 "use strict";
-//jQuery(document).foundation()
-jQuery.noConflict();
+//document.addEventListener('DOMContentLoaded', () => {
+//  {
+    //jQuery(document).foundation()
+    jQuery.noConflict();
 
-window.onscroll = function() {myFunction()};
+    //window.addEventListener("scroll", stickyNavbar()); Alternative but not working option
+    window.onscroll = function() { stickyNavbar() };
 
-var navbar = document.getElementById("navbar");
-var sectionsMenu = document.getElementById("sections-menu");
-var sticky = navbar.offsetTop;
+    const navbar = document.getElementById("navbar");
+    const stickyN = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-    sectionsMenu.classList.add("sticky-menu");
-  } else {
-    navbar.classList.remove("sticky");
-    sectionsMenu.classList.remove("sticky-menu");
-  }
-}
+    function stickyNavbar() {
+      if (window.pageYOffset > stickyN) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+//  }
+//});
