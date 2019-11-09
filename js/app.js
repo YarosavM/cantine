@@ -12,9 +12,9 @@
 
     function stickyNavbar() {
       if (window.pageYOffset > stickyN) {
-        navbar.classList.add("sticky");
+        //navbar.classList.add("sticky");
       } else {
-        navbar.classList.remove("sticky");
+        //navbar.classList.remove("sticky");
       }
     }
 //  }

@@ -19,10 +19,47 @@ Tags:               dark, light, white, black, gray, one-column, two-columns, th
 body,html{
 	height: 100%;
 	width: 100%;
-	background: rgba(222,222,222,0.9);
 }
 ul{
 	list-style-type: none;
+	margin: 0;
+}
+
+.white-button {
+	color: black!important;
+	//padding: 15px 16px;
+	border-radius: 1px;
+	border: none;
+
+	background: -moz-linear-gradient(85deg,  #C5301F 0%, #C5301F 52%, #ffffff 54%, #ffffff 54%, #ffffff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(85deg,  #C5301F 0%,#C5301F 52%,#ffffff 54%,#ffffff 54%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(85deg,  #C5301F 0%,#C5301F 52%,#ffffff 54%,#ffffff 54%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+	position: relative;
+
+	&:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		
+		background: -moz-linear-gradient(85deg,  #C5301F 0%, #C5301F 52%, #ffffff 54%, #ffffff 54%, #ffffff 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(85deg,  #C5301F 0%,#C5301F 52%,#ffffff 54%,#ffffff 54%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(85deg,  #C5301F 0%,#C5301F 52%,#ffffff 54%,#ffffff 54%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+		z-index: 5;
+	}
+}
+.white-button, .white-button:after{
+	background-size: 300%;
+	background-position: 100%;
+    transition: 0.4s ease-in 0.1s;
+}
+
+.white-button:hover, .white-button:hover:after{
+	background-position: 0;
 }
 
 .sticky{
@@ -37,7 +74,7 @@ ul{
 }
 
 header, .header{
-	height: 70%;
+	height: 75%;
 }
 .header-image{
 	height: 100%;
@@ -48,7 +85,25 @@ header, .header{
 	background-position: center;
 	color: white;
 }
+.logo-wrap{
+	display: flex;
+    justify-content: space-around;
+}
+.header-logo {
+	width: 150px;
+	height: 150px;
+	background: url("images/rest-logo.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 69;
+}
 nav, .navbar{
+	width: 75%;
+    margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	z-index: 69;
 	transition: 0.3s;
 	height: 50px;
@@ -56,7 +111,8 @@ nav, .navbar{
 	color:white;
 }
 .navbar-list{
-	font-size: 18px;
+	border-bottom: 2px solid rgba(255,255,255,0.85);
+	font-size: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -65,7 +121,8 @@ nav, .navbar{
     margin: 0px auto;
 }
 .active-tab{
-	color: rgba(255,255,255,0.95)!important;
+	font-weight: 700;
+	color: #C5301F!important;
 }
 .navbar-tab{
 	display: flex;
@@ -73,11 +130,11 @@ nav, .navbar{
 	padding: 0px 25px;
 	height: 100%;
 	cursor: pointer;
-	color: rgba(255,255,255,0.55);
+	color: #8F301F;
 	transition: 0.3s;
 }
 .navbar-tab:hover{
-	color: rgba(255,255,255,0.95);
+	color: #C5301F;
 }
 
 .content{
@@ -87,18 +144,74 @@ nav, .navbar{
 	padding: 10px;
 	z-index: 15;
 	color: black;
+	background: url("images/cover.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 main, .main{
-	position: absolute;
+	position: relative;
 	z-index: 15;
 	background: rgba(255,255,255,1);
-	-webkit-box-shadow: 0px 0px 3px 1px #555555; 
-	box-shadow: 0px 0px 3px 1px #555555;
 	width: 80%;
-	min-height: 100%;
 	margin-top: -100px;
 	margin-left: 10%;
 	padding: 10px;
+}
+.main-top-image{
+	width: 100%;
+	background: url("images/interior.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+.main-header {
+	padding-top: 20px;
+	color: antiquewhite;
+	text-align: center;
+	font-size: 45px;
+}
+.main-text {
+	font-size: 21px;
+	color: whitesmoke;
+	padding: 10px 100px;
+}
+.main-action-button {
+	font-size: 20px;
+}
+
+.blog-line-wrap {
+	margin-top: 15px;
+	width: 100%;
+	position: relative;
+	left: 0;
+	background: white;
+	padding: 3px;
+}
+.blog-line{
+	padding: 5px;
+    height: 350px;
+}
+.blog-post-list{
+	height: 100%;
+}
+
+.blog-post-image{
+	object-fit: cover;
+	width: 100%;
+	height: 70%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.blog-post-item{
+	font-size: 20px;
+	padding: 0px 5px;
+	height: 100%;
+	overflow: hidden;
+}
+.blog-post-content{
+	margin-top: 5px;
 }
 
 
@@ -124,9 +237,18 @@ footer, .footer{
 	padding: 5px;
 }
 .footer-menu-list{
-
+	padding: 5px;
 }
 .footer-menu-element{
 	margin: 0 10px;
 	display: inline-block;
+}
+.social-image{
+	height: 30px;
+	width: 30px;
+	transform: scale(0.9);
+	transition: 0.4s ease-in 0.1s;
+	&:hover{
+		transform:scale(1);
+	}
 }

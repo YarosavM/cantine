@@ -66,7 +66,7 @@
 
                 <div class="footer-social large-4 medium-4 small-4">
                     <a href="https://facebook.com">
-                        <img class="social-image" id="facebook" src="css/images/icons/043-facebook-1.png">
+                        <img class="social-image" id="facebook" src="wp-content/themes/kaintin/css/images/icons/045-facebook.png">
                     </a>
                 </div>
             </div>

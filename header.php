@@ -69,12 +69,21 @@
 	<!-- Custom Header -->
 	<header class="header">
 		<div class="header-image">
-			<nav class="navbar" id="navbar">
-				<ul class="navbar-list" id="navbar-menu">
+			<nav class="navbar grid-x" id="navbar">
+				<ul class="navbar-list float-left navbar-1 cell large-4 medium-4 small-4" id="navbar-menu">
 					<li class="active-tab navbar-tab">
 						<div class="navbar-tab-content">Home</div>
 					</li>
+					<li class="navbar-tab">Events</li>
+				</ul>
+
+				<div class="logo-wrap cell large-4 medium-4 small-4">
+					<div class="header-logo"></div>
+				</div>
+
+				<ul class="navbar-list float-right navbar-2 cell large-4 medium-4 small-4">
 					<li class="navbar-tab">Menu</li>
+					<li class="navbar-tab">Reservation</li>
 					<li class="navbar-tab">Contact</li>
 				</ul>
 			</nav>
