@@ -1,6 +1,6 @@
 "use strict";
-//document.addEventListener('DOMContentLoaded', () => {
-//  {
+document.addEventListener('DOMContentLoaded', () => {
+  {
     //jQuery(document).foundation()
     jQuery.noConflict();
 
@@ -17,5 +17,18 @@
         //navbar.classList.remove("sticky");
       }
     }
-//  }
-//});
+
+
+    let smallBlogPostsAll = document.querySelectorAll(".blog-post-item");
+
+    for(let i = 0; i < smallBlogPostsAll.length; i++){
+      let smallBlogPost = smallBlogPostsAll[i];
+      smallBlogPost.addEventListener('mouseover', () => {
+        smallBlogPost.querySelectorAll(".blog-post-image")[0].classList.add('blog-post-image-action');
+      })
+      smallBlogPost.addEventListener('mouseout', () => {
+        smallBlogPost.querySelectorAll(".blog-post-image")[0].classList.remove('blog-post-image-action');
+      })
+    }
+  }
+});

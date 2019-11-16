@@ -25,6 +25,10 @@ ul{
 	margin: 0;
 }
 
+button, .button{
+	margin: 0 0 0 0;
+}
+
 .white-button {
 	color: black!important;
 	//padding: 15px 16px;
@@ -152,7 +156,7 @@ nav, .navbar{
 main, .main{
 	position: relative;
 	z-index: 15;
-	background: rgba(255,255,255,1);
+	background: #8F301F;
 	width: 80%;
 	margin-top: -100px;
 	margin-left: 10%;
@@ -160,6 +164,7 @@ main, .main{
 }
 .main-top-image{
 	width: 100%;
+	min-height: 75vh;
 	background: url("images/interior.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -176,12 +181,20 @@ main, .main{
 	color: whitesmoke;
 	padding: 10px 100px;
 }
+.buttons-wrap {
+	display: inline-block;
+	position: relative;
+	background: rgb(27, 27, 27);
+	padding: 5px;
+	margin: 15px 0 15px -35px;
+}
 .main-action-button {
 	font-size: 20px;
+	margin: 0;
 }
 
 .blog-line-wrap {
-	margin-top: 15px;
+	margin: 25px 0px;
 	width: 100%;
 	position: relative;
 	left: 0;
@@ -203,12 +216,22 @@ main, .main{
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	filter: grayscale(0.5);
+	transition: 0.4s ease-in 0.1s;
+	cursor: pointer;
+	transform: scale(0.9);
 }
+.blog-post-image-action{
+	transform: scale(1)!important;
+	filter: grayscale(0)!important;
+}
+
 .blog-post-item{
 	font-size: 20px;
 	padding: 0px 5px;
 	height: 100%;
 	overflow: hidden;
+	cursor: pointer;
 }
 .blog-post-content{
 	margin-top: 5px;

@@ -20,6 +20,8 @@ get_header();
       </div>
       <div class="buttons-wrap">
         <input class="button white-button main-action-button" type="submit" value="Find us">
+        <input class="button white-button main-action-button" type="submit" value="Contact us">
+        <input class="button white-button main-action-button" type="submit" value="Book a table">
       </div>
     </div>
 
@@ -28,7 +30,7 @@ get_header();
   <div class="blog-line-wrap">
     <div class="blog-line">
       <ul class="blog-post-list grid-x">
-          <li class="blog-post-item cell small-6 large-4 medium-4">
+          <li class="blog-post-item cell small-6 large-4 medium-4" id="blog-post-1">
             <img src="wp-content/themes/kaintin/css/images/blog-1.jpg" class="blog-post-image">
             <div class="blog-post-content">
               Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. 
