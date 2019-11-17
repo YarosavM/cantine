@@ -28,6 +28,10 @@ ul{
 a{
 	transition: 0.2s;
 }
+p{
+	margin: 0;
+	padding: 0;
+}
 
 button, .button{
 	margin: 0 0 0 0;
@@ -165,6 +169,38 @@ main, .main{
 	margin-top: -100px;
 	margin-left: 10%;
 	padding: 10px;
+	box-sizing: border-box;
+}
+.blog-main {
+	position: relative;
+	z-index: 15;
+	width: 80%;
+	margin-left: 10%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.blog-text {
+	font-size: 18px;
+}
+.blogpost-caption {
+	font-size: 25px;
+}
+.blog-item{
+	margin: 0px 0px;
+	padding: 10px;
+	&:first-child{
+		margin: 0px 0px 0px 0px;
+	}
+	&:last-child{
+		margin: 0px 0px 0px 0px;
+	}
+	img{
+		width: 100%;
+		min-height: 50%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
 }
 .main-top-image{
 	width: 100%;
@@ -301,4 +337,8 @@ footer, .footer{
 		transform:scale(1);
 		filter: grayscale(0);
 	}
+}
+
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+	margin: 0;
 }

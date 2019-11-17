@@ -9,8 +9,8 @@
             </div>
         </div>
 
-        <!-- Blog Line -->
-        <div class="blog-line"></div>
+        <!-- Blog Line 
+        <div class="blog-line"></div>-->
 
         <!-- Blog Content -->
         <div class="blog-content">
