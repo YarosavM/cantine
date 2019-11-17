@@ -25,6 +25,10 @@ ul{
 	margin: 0;
 }
 
+a{
+	transition: 0.2s;
+}
+
 button, .button{
 	margin: 0 0 0 0;
 }
@@ -206,6 +210,7 @@ main, .main{
     height: 350px;
 }
 .blog-post-list{
+	z-index: 3;
 	height: 100%;
 }
 
@@ -237,6 +242,26 @@ main, .main{
 	margin-top: 5px;
 }
 
+.more-posts-zone{
+	float: right;
+	background: rgba(255,255,255,0.75);
+	-webkit-box-shadow: 0px 0px 32px 2px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 0px 32px 2px rgba(255,255,255,1);
+	box-shadow: 0px 0px 32px 2px rgba(255,255,255,1);
+	a{
+		padding: 5px;
+		font-size: 17px;
+	}
+}
+
+
+.map-wrap {
+	background: rgba(0,0,0,0.7);
+}
+.map {
+	min-height: 20%;
+	height: 500px;
+}
 
 
 footer, .footer{
@@ -271,7 +296,9 @@ footer, .footer{
 	width: 30px;
 	transform: scale(0.9);
 	transition: 0.4s ease-in 0.1s;
+	filter: grayscale(0.25);
 	&:hover{
 		transform:scale(1);
+		filter: grayscale(0);
 	}
 }

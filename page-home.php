@@ -58,8 +58,17 @@ get_header();
               eget nulla facilisi etiam dignissim.
             </div>
           </li>
-
       </ul>
+      <div class="more-posts-zone">
+        <a href="https://www.blog.com">More posts...</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="map-wrap" id="map">
+    <div class="main-header">Where we are</div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d607.1483037970053!2d24.02577985345822!3d49.8423654442472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7241d43dd5%3A0xf8c00005a1a7d40e!2sYaponaHata!5e0!3m2!1sen!2sua!4v1573922060997!5m2!1sen!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
   </div>
 

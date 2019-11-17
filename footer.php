@@ -68,6 +68,15 @@
                     <a href="https://facebook.com">
                         <img class="social-image" id="facebook" src="wp-content/themes/kaintin/css/images/icons/045-facebook.png">
                     </a>
+                    <a href="https://instagram.com">
+                        <img class="social-image" id="instagram" src="wp-content/themes/kaintin/css/images/icons/034-instagram.png">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img class="social-image" id="twitter" src="wp-content/themes/kaintin/css/images/icons/013-twitter-1.png">
+                    </a>
+                    <a href="https://youtube.com">
+                        <img class="social-image" id="youtube" src="wp-content/themes/kaintin/css/images/icons/002-youtube.png">
+                    </a>
                 </div>
             </div>
         </div>

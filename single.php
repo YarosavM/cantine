@@ -15,9 +15,7 @@
 
         <!-- Right Menu -->
         <div class="right-side">
-            <?php if (is_shop()): ?>
-                <?php get_sidebar(); ?>
-            <?php endif ?>
+            <?php get_sidebar(); ?>
         </div>
 
         <!-- Left Content -->
