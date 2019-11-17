@@ -171,7 +171,7 @@ main, .main{
 	padding: 10px;
 	box-sizing: border-box;
 }
-.blog-main, .blog-center-align {
+.blog-main, .blog-center-align, .blog-single-footer, .blog-line {
 	position: relative;
 	z-index: 15;
 	width: 80%;
@@ -205,6 +205,32 @@ main, .main{
 		}
 	}
 }
+.story {
+	img{
+		display: flex;
+		height: auto;
+		width: 75%;
+		margin: 0 auto;
+	}
+}
+.left-side {
+	.caption{
+		text-align: center;
+		letter-spacing: 2px;
+		font-size: 40px;
+		margin-bottom: 25px;
+	}
+}
+.blogpost-image-zone {
+	margin-bottom: 50px;
+	padding: 5px 5px 50px 5px;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+.blogpost-content-zone {
+	font-size: 18px;
+}
+
+
 .main-top-image{
 	width: 100%;
 	min-height: 75vh;

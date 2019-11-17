@@ -12,6 +12,7 @@
 
         <!-- Filters Here -->
         <ul class="blog-filter-line">
+            <!--
             <li><?php _e('Filter By','aletheme'); ?>:</li>
             <li>
                 <a class="filter-caption"><p><?php _e('Author','aletheme'); ?></p><span></span></a>
@@ -84,7 +85,8 @@
                 echo $html;
                 ?>
             </li>
-
+            -->
+            
             <li class="search">
                 <form role="search" method="get" id="searchform" action="<?php echo site_url()?>" >
                     <input type="search" class="searchinput" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php _e('SEARCH', 'aletheme')?>" />

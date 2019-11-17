@@ -20,9 +20,7 @@
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
-                <?php
-                        echo get_the_post_thumbnail($post->ID,'post-minibox');
-                    ?>
+                <?php //echo get_the_post_thumbnail($post->ID,'post-minibox');  ::Another blogpost image?>
 
                 <h3 class="caption"><?php the_title(); ?></h3>
                 <div class="text">
