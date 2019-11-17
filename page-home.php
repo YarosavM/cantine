@@ -28,7 +28,7 @@ get_header();
   </main>
 
   <div class="blog-line-wrap">
-    <div class="blog-line">
+    <div class="blog-line-c">
       <ul class="blog-post-list grid-x">
           <li class="blog-post-item cell small-6 large-4 medium-4" id="blog-post-1">
             <img src="wp-content/themes/kaintin/css/images/blog-1.jpg" class="blog-post-image">

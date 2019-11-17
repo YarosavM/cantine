@@ -18,8 +18,8 @@
             </div>
         </div>
 
-        <!-- Blog Line -->
-        <div class="blog-line"></div>
+        <!-- Blog Line
+        <div class="blog-line"></div> -->
 
         <!-- Filters Here -->
         <ul class="blog-filter-line">
@@ -97,6 +97,7 @@
                 ?>
             </li>
             <?php*/ ?>
+            
             <li class="search">
                 <form role="search" method="get" id="searchform" action="<?php echo site_url()?>" >
                     <input type="search" class="searchinput" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php _e('SEARCH', 'aletheme')?>" />
@@ -121,8 +122,8 @@
             <div class="center"><?php _e('page','aletheme'); ?> <?php echo $paged; ?> <?php _e('of','aletheme'); ?> <?php echo $wp_query->max_num_pages; ?></div>
         </div>
 
-        <!-- Blog Nav -->
-        <div class="blog-line"></div>
+        <!-- Blog Nav
+        <div class="blog-line"></div> -->
 
         <!-- Blog Footer  -->
         <div class="blog-footer">

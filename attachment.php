@@ -31,8 +31,8 @@
             </div><!-- .entry-content -->
         </div>
 
-        <!-- Blog Nav -->
-        <div class="blog-line"></div>
+        <!-- Blog Nav
+        <div class="blog-line"></div> -->
 
 
     </div>

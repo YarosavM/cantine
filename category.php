@@ -7,10 +7,11 @@
             <div class="blogtitle"><?php echo single_cat_title("", false); ?></div>
         </div>
 
-        <!-- Blog Line -->
-        <div class="blog-line"></div>
+        <!-- Blog Line
+        <div class="blog-line"></div> -->
 
         <!-- Filters Here -->
+        <?php/*?>
         <ul class="blog-filter-line">
             <li><?php _e('Filter By','aletheme'); ?>:</li>
             <li>
@@ -84,7 +85,8 @@
                 echo $html;
                 ?>
             </li>
-
+            <?php*/?>
+            
             <li class="search">
                 <form role="search" method="get" id="searchform" action="<?php echo site_url()?>" >
                     <input type="search" class="searchinput" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php _e('SEARCH', 'aletheme')?>" />
