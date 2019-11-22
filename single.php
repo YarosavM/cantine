@@ -43,9 +43,9 @@
 
         <!-- Blog Nav  -->
         <div class="blog-single-footer">
-            <div class="left"><?php if(get_previous_post_link()){ ?><span class="left"></span><?php } ?>
+            <div class="prev-left"><?php if(get_previous_post_link()){ ?><span class="left"></span><?php } ?>
                 <?php previous_post_link('%link'); ?> </div>
-            <div class="right"><?php if(get_next_post_link()){ ?><span class="right"></span><?php } ?>
+            <div class="next-right"><?php if(get_next_post_link()){ ?><span class="right"></span><?php } ?>
                 <?php next_post_link('%link'); ?> </div>
         </div>
 

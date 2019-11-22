@@ -31,6 +31,13 @@ p {
 button, .button {
   margin: 0 0 0 0; }
 
+.prev-left {
+  display: inline-block;
+  left: 0; }
+
+.next-right {
+  float: right; }
+
 .white-button {
   color: black !important;
   border-radius: 1px;
@@ -163,8 +170,8 @@ main, .main {
 .blog-main, .blog-center-align, .blog-single-footer, .blog-line {
   position: relative;
   z-index: 15;
-  width: 80%;
-  margin-left: 10%;
+  width: 70%;
+  margin-left: 15%;
   padding: 10px;
   box-sizing: border-box; }
 
@@ -181,8 +188,7 @@ main, .main {
   font-size: 25px; }
 
 .blog-item {
-  margin: 0px 5px;
-  padding: 10px; }
+  padding: 10px 15px; }
   .blog-item img {
     object-fit: cover;
     width: 100%;
@@ -201,14 +207,24 @@ main, .main {
   text-align: center;
   letter-spacing: 2px;
   font-size: 40px;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  color: rgba(0, 0, 0, 0.8); }
 
-.blogpost-image-zone {
-  margin-bottom: 50px;
-  padding: 5px 5px 50px 5px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+.blogpost-top {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px; }
+  .blogpost-top .blogpost-image-zone {
+    padding: 5px 5px 50px 5px; }
+  .blogpost-top .blogpost-under-image-zone {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 50px 5px; }
 
-.blogpost-content-zone {
+.blogpost-bottom .blogpost-content-zone {
   font-size: 18px; }
 
 .main-top-image {
@@ -335,5 +351,14 @@ footer, .footer {
 
 [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
   margin: 0; }
+
+@media (max-width: 1015px) {
+  .blog-main, .blog-center-align, .blog-single-footer, .blog-line {
+    position: relative;
+    z-index: 15;
+    width: 80%;
+    margin-left: 10%;
+    padding: 10px;
+    box-sizing: border-box; } }
 
 /*# sourceMappingURL=style.css.map */

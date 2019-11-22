@@ -30,8 +30,8 @@
 
         <!-- Blog Nav  -->
         <div class="blog-nav">
-            <span class="left"><?php echo get_previous_posts_link(__('&lt; Newer Posts','aletheme')); ?></span>
-            <span class="right"><?php echo get_next_posts_link(__('Older Posts &gt;','aletheme')); ?></span>
+            <span class="prev-left"><?php echo get_previous_posts_link(__('&lt; Newer Posts','aletheme')); ?></span>
+            <span class="next-right"><?php echo get_next_posts_link(__('Older Posts &gt;','aletheme')); ?></span>
             <div class="center"><?php _e('page','aletheme'); ?> <?php echo $paged; ?> <?php _e('of','aletheme'); ?> <?php echo $wp_query->max_num_pages; ?></div>
         </div>
 
