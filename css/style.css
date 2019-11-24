@@ -128,22 +128,20 @@ nav, .navbar {
   height: 100%;
   width: 70%;
   margin: 0px auto; }
+  .navbar-list li, .navbar-list .navbar-tab {
+    display: flex;
+    align-items: center;
+    padding: 0px 25px;
+    height: 100%;
+    cursor: pointer;
+    color: #8F301F;
+    transition: 0.3s; }
+    .navbar-list li:hover, .navbar-list .navbar-tab:hover {
+      color: #C5301F; }
 
 .active-tab {
   font-weight: 700;
   color: #C5301F !important; }
-
-.navbar-tab {
-  display: flex;
-  align-items: center;
-  padding: 0px 25px;
-  height: 100%;
-  cursor: pointer;
-  color: #8F301F;
-  transition: 0.3s; }
-
-.navbar-tab:hover {
-  color: #C5301F; }
 
 .content {
   width: 100%;
@@ -175,6 +173,18 @@ main, .main {
   padding: 10px;
   box-sizing: border-box; }
 
+.item-content {
+  transition: 0.4s ease-in 0.1s;
+  padding: 0 15px;
+  border: 2px solid transparent;
+  border-top: 0px;
+  border-bottom: 0px; }
+
+.item-content-active {
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-top: 0px;
+  border-bottom: 0px; }
+
 .blog-text {
   font-size: 18px;
   display: flex;
@@ -185,6 +195,7 @@ main, .main {
 .blogpost-caption {
   display: flex;
   justify-content: space-around;
+  text-align: center;
   font-size: 25px; }
 
 .blog-item {

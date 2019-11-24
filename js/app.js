@@ -1,3 +1,39 @@
+// #TODO: optimise lines 70-85; make beautiful sticky navbar
+//
+//
+//
+  //      ________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ 
+  //      ________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ 
+  //      ___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ 
+  //      _¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ 
+  //      ¶¶¶¶______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_______¶¶¶¶ 
+  //      ¶¶¶_______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________¶¶¶ 
+  //      ¶¶________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________¶¶¶ 
+  //      ¶¶¶_____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶______¶¶¶ 
+  //      ¶¶¶____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____¶¶¶¶ 
+  //      _¶¶¶___¶¶¶_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶¶¶____¶¶¶ 
+  //      _¶¶¶¶___¶¶¶_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶¶¶¶__¶¶¶¶ 
+  //      ___¶¶¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶¶¶¶¶ 
+  //      ____¶¶¶¶¶¶¶¶_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶¶¶¶¶¶¶¶¶ 
+  //      ______¶¶¶¶¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶¶¶¶¶ 
+  //      _______________¶¶¶¶¶¶¶¶¶¶¶¶ 
+  //      _________________¶¶¶¶¶¶¶¶ 
+  //      ___________________¶¶¶¶ 
+  //      ___________________¶¶¶¶ 
+  //      ___________________¶¶¶¶ 
+  //      ___________________¶¶¶¶ 
+  //      _______________¶¶¶¶¶¶¶¶¶¶¶¶ 
+  //      ____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ 
+  //      ____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ 
+  //      ____________¶¶¶____________¶¶¶ 
+  //      ____________¶¶¶____________¶¶¶ 
+  //      ____________¶¶¶____________¶¶¶ 
+  //      ____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ 
+  //      ____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ 
+  //      __________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ 
+  //      _________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+  //
+
 "use strict";
 document.addEventListener('DOMContentLoaded', () => {
   {
@@ -29,6 +65,24 @@ document.addEventListener('DOMContentLoaded', () => {
       smallBlogPost.addEventListener('mouseout', () => {
         smallBlogPost.querySelectorAll(".blog-post-image")[0].classList.remove('blog-post-image-action');
       })
+    }
+
+    const blogPostItem = document.querySelectorAll(".blog-item");
+
+    for(let i = 0; i < blogPostItem.length; i++){
+      let blogPostCurrItem = blogPostItem[i];
+      
+      let blogPostCurrSelectors = blogPostCurrItem.querySelectorAll(".wp-post-image, .item-content");
+
+      for (let j = 0; j < blogPostCurrSelectors.length; j++) {
+        blogPostCurrSelectors[j].addEventListener('mouseover', () => {
+          blogPostCurrItem.querySelectorAll(".item-content")[0].classList.add("item-content-active");
+        });
+
+        blogPostCurrSelectors[j].addEventListener('mouseout', ()=> {
+          blogPostCurrItem.querySelectorAll(".item-content")[0].classList.remove("item-content-active");
+        });
+      }
     }
   }
 });

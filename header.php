@@ -70,12 +70,17 @@
 	<header class="header">
 		<div class="header-image">
 			<nav class="navbar grid-x" id="navbar">
-				<ul class="navbar-list float-left navbar-1 cell large-4 medium-4 small-4" id="navbar-menu">
+				<!--<ul class="navbar-list float-left navbar-1 cell large-4 medium-4 small-4" id="navbar-menu">
 					<li class="active-tab navbar-tab">
 						<div class="navbar-tab-content">Home</div>
 					</li>
 					<li class="navbar-tab">Events</li>
-				</ul>
+				</ul>-->
+				<?php
+				wp_nav_menu( array( 
+					'theme_location' => 'home_page_top_left', 
+					'container_class' => 'navbar-list float-left navbar-1 cell large-4 medium-4 small-4' ) ); 
+				?>
 
 				<div class="logo-wrap cell large-4 medium-4 small-4">
 					<div class="header-logo"></div>

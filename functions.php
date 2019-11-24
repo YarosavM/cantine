@@ -40,3 +40,9 @@ function archieve_filter_widget_init() {
     ) );
 } 
 add_action( 'widgets_init', 'archieve_filter_widget_init' );
+
+// Custom menues
+function wp_home_page_top_left() {
+	register_nav_menu('home_page_top_left',__( 'Home Page top-left' ));
+}
+add_action( 'init', 'wp_home_page_top_left' );
