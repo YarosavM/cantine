@@ -26,10 +26,12 @@ if ( is_readable($locale_file) )
  * updates only.
  ****************************************************************/
 
-function mytheme_add_woocommerce_support() {
+/*function mytheme_add_woocommerce_support() {
 	add_theme_support( 'woocommerce' );
 }
-add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );*/
+
+add_theme_support( 'post-thumbnails' );
 
 // Archieve product WOOF Filter Zone
 function archieve_filter_widget_init() {
@@ -42,7 +44,20 @@ function archieve_filter_widget_init() {
 add_action( 'widgets_init', 'archieve_filter_widget_init' );
 
 // Custom menues
-function wp_home_page_top_left() {
-	register_nav_menu('home_page_top_left',__( 'Home Page top-left' ));
+function wp_header_top_left() {
+	register_nav_menu('header_top_left',__( 'Header top-left' ));
 }
-add_action( 'init', 'wp_home_page_top_left' );
+add_action( 'init', 'wp_header_top_left' );
+
+function wp_header_top_right(){
+	register_nav_menu('header_top_right',__('Header top-right'));
+}
+add_action( 'init', 'wp_header_top_right');
+
+
+
+// Excerpt
+function wp_excerpt_length( $length ) {
+    return 10;
+}
+add_filter( 'excerpt_length', 'wp_excerpt_length', 999 );

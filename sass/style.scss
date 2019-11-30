@@ -11,6 +11,10 @@ Tags:               dark, light, white, black, gray, one-column, two-columns, th
 */
 
 
+$themeColor1: #000000;
+$themeColor2: rgb(27, 27, 27);
+$themeColor3: #64565A;
+
 
 *{
 	margin: 0;
@@ -27,6 +31,10 @@ ul{
 
 a{
 	transition: 0.2s;
+	color: rgba(111, 111, 111, 0.75);
+	&:hover{
+		color: rgb(134, 134, 134);
+	}
 }
 p{
 	margin: 0;
@@ -107,7 +115,9 @@ header, .header{
 }
 .logo-wrap{
 	display: flex;
-    justify-content: space-around;
+	justify-content: space-around;
+	background: $themeColor2;
+	border-radius: 25%;
 }
 .header-logo {
 	width: 150px;
@@ -131,8 +141,9 @@ nav, .navbar{
 	color:white;
 }
 .navbar-list{
+	background: $themeColor2;
 	border-bottom: 2px solid rgba(255,255,255,0.85);
-	font-size: 20px;
+	font-size: 22px;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -142,14 +153,24 @@ nav, .navbar{
 	li, .navbar-tab{
 		display: flex;
 		align-items: center;
-		padding: 0px 25px;
+		padding: 0px 3px;
 		height: 100%;
 		cursor: pointer;
 		color: #8F301F;
-		transition: 0.3s;
-		&:hover{
-			color: #C5301F;
+		transition: 0.4s ease-in 0.1s;
+		
+		a{	
+			transition: 0.4s ease-in 0.1s;
+			color: #8F301F;
+			&:hover{
+				color: #C5301F;
+			}
 		}
+	}
+	.menu{
+		width: 100%;
+		display: flex;
+    	justify-content: space-evenly;
 	}
 }
 .active-tab{
@@ -163,8 +184,8 @@ nav, .navbar{
 	height: auto;
 	padding: 10px;
 	z-index: 15;
-	color: black;
-	background: url("images/cover.jpg");
+	color: white;
+	background: #000000;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -307,7 +328,8 @@ main, .main{
 	width: 100%;
 	position: relative;
 	left: 0;
-	background: white;
+	background: $themeColor2;
+	color: #FFFFFF;
 	padding: 3px;
 }
 .blog-line-c{
@@ -319,7 +341,7 @@ main, .main{
 	height: 100%;
 }
 
-.blog-post-image{
+.size-blog-post-image{
 	object-fit: cover;
 	width: 100%;
 	height: 70%;
@@ -331,7 +353,7 @@ main, .main{
 	cursor: pointer;
 	transform: scale(0.9);
 }
-.blog-post-image-action{
+.size-blog-post-image-action{
 	transform: scale(1)!important;
 	filter: grayscale(0)!important;
 }
@@ -361,7 +383,7 @@ main, .main{
 
 
 .map-wrap {
-	background: rgba(0,0,0,0.7);
+	background: $themeColor2;
 }
 .map {
 	min-height: 20%;
@@ -420,5 +442,10 @@ footer, .footer{
 		margin-left: 10%;
 		padding: 10px;
 		box-sizing: border-box;
+	}
+}
+@media(max-width: 1280px){
+	nav, .navbar{
+		width: 90%;
 	}
 }

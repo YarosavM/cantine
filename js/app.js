@@ -60,10 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
     for(let i = 0; i < smallBlogPostsAll.length; i++){
       let smallBlogPost = smallBlogPostsAll[i];
       smallBlogPost.addEventListener('mouseover', () => {
-        smallBlogPost.querySelectorAll(".blog-post-image")[0].classList.add('blog-post-image-action');
+        smallBlogPost.querySelectorAll(".size-blog-post-image")[0].classList.add('size-blog-post-image-action');
       })
       smallBlogPost.addEventListener('mouseout', () => {
-        smallBlogPost.querySelectorAll(".blog-post-image")[0].classList.remove('blog-post-image-action');
+        smallBlogPost.querySelectorAll(".size-blog-post-image")[0].classList.remove('size-blog-post-image-action');
       })
     }
 

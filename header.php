@@ -70,27 +70,21 @@
 	<header class="header">
 		<div class="header-image">
 			<nav class="navbar grid-x" id="navbar">
-				<!--<ul class="navbar-list float-left navbar-1 cell large-4 medium-4 small-4" id="navbar-menu">
-					<li class="active-tab navbar-tab">
-						<div class="navbar-tab-content">Home</div>
-					</li>
-					<li class="navbar-tab">Events</li>
-				</ul>-->
 				<?php
 				wp_nav_menu( array( 
-					'theme_location' => 'home_page_top_left', 
-					'container_class' => 'navbar-list float-left navbar-1 cell large-4 medium-4 small-4' ) ); 
+					'theme_location' => 'header_top_left', 
+					'container_class' => 'navbar-list float-left navbar-1 cell large-5 medium-5 small-5' ) ); 
 				?>
 
-				<div class="logo-wrap cell large-4 medium-4 small-4">
+				<div class="logo-wrap cell large-2 medium-2 small-2">
 					<div class="header-logo"></div>
 				</div>
 
-				<ul class="navbar-list float-right navbar-2 cell large-4 medium-4 small-4">
-					<li class="navbar-tab">Menu</li>
-					<li class="navbar-tab">Reservation</li>
-					<li class="navbar-tab">Contact</li>
-				</ul>
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'header_top_right',
+					'container_class' => 'navbar-list float-left navbar-1 cell large-5 medium-5 small-5' ) );
+				?>
 			</nav>
 		</div>
 	</header>

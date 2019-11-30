@@ -8,7 +8,7 @@
     </a>
     <div class="item-content">
         <a href="<?php the_permalink(); ?>" class="blogpost-caption"><?php the_title(); ?></a>
-        <div class="blog-text"><?php echo ale_trim_excerpt('25'); ?></div>
+        <!--<div class="blog-text"><?php /*echo ale_trim_excerpt('25'); */?></div>-->
         <!--<a class="href" href="<?php /*the_permalink(); ?>"><?php _e('take a look','aletheme'); */?></a>-->
     </div>
 </div>
